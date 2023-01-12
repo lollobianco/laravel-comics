@@ -1,7 +1,7 @@
 .jumbo-container{
    background-image: url('../images/jumbotron.jpg');
    background-size: cover;
-   height: 350px;
+   height: 400px;
 }
 
 a{
@@ -20,6 +20,27 @@ a:hover{
 
 .fs-xxs{
    font-size: 0.7rem;
-   margin: 0;
-   display: inline-block;
+}
+
+.search{
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   border-color: #0182F9;
+}.comics-section{
+   background-color: #1C1C1C;
+}
+
+.card-container{
+   width: calc(100%/6);
+   padding: 10px;
+}
+
+.image-comic{
+   width:200px;
+   height:200px;
+   -o-object-fit:cover;
+      object-fit:cover;
+   -o-object-position: top;
+      object-position: top;
 }

@@ -1,7 +1,7 @@
 .jumbo-container{
    background-image: url('../images/jumbotron.jpg');
    background-size: cover;
-   height: 350px;
+   height: 400px;
 }
 
 a{
@@ -20,6 +20,11 @@ a:hover{
 
 .fs-xxs{
    font-size: 0.7rem;
-   margin: 0;
-   display: inline-block;
+}
+
+.search{
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   border-color: #0182F9;
 }
