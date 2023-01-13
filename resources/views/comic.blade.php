@@ -62,4 +62,112 @@
 
     </section>
 
+    <section class="info2-section">
+
+        <div class="container d-flex">
+
+            <div class="col-6 left2 d-flex flex-column pe-3">
+
+                <div class="border-bottom">
+                    <h3 class="mb-3">Talent</h3>
+                </div>
+
+                <div class="d-flex flex-column border-bottom">
+
+                    <div class="d-flex py-2">
+
+                        <div class="d-block col-3">Art by:</div>
+                        
+                        <div class="col-8 text-primary">
+                        @foreach ($single_comic['artists'] as $element)
+                            
+                            {{$element}},
+                            
+                        @endforeach
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+
+                <div class="d-flex flex-column border-bottom">
+
+                    <div class="d-flex py-2">
+
+                        <div class="d-block col-3">Written by:</div>
+                        
+                        <div class="col-8 text-primary">
+                        @foreach ($single_comic['writers'] as $element)
+                            
+                            {{$element}},
+                            
+                        @endforeach
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="col-6 right2 d-flex flex-column">
+
+                <div class="border-bottom">
+                    <h3 class="mb-3">Specs</h3>
+                </div>
+
+                <div class="d-flex py-3 border-bottom">
+                    <div class="col-4">Series:</div>
+                    <div class="col-4 text-primary">{{$single_comic['series']}}</div>
+                </div>
+
+                <div class="d-flex py-3 border-bottom">
+                    <div class="col-4">U.S. Price:</div>
+                    <div class="col-4 text-primary">{{$single_comic['price']}}</div>
+                </div>
+
+                <div class="d-flex py-3 border-bottom">
+                    <div class="col-4">On Sale Date:</div>
+                    <div class="col-4 text-primary">{{$single_comic['sale_date']}}</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="container">
+
+            <div class="d-flex">
+
+                <div class="col-3 d-flex justify-content-between prefooter-container">
+                    <span class="fw-bold image-title">DIGITAL COMICS</span>
+                    <div class="fake-img"></div>
+                </div>
+
+                <div class="col-3 d-flex justify-content-between prefooter-container">
+                    <span class="fw-bold image-title">SHOP DC</span>
+                    <div class="fake-img"></div>
+                </div>
+
+                <div class="col-3 d-flex justify-content-between prefooter-container">
+                    <span class="fw-bold image-title">COMIC SHOP LOCATOR</span>
+                    <div class="fake-img"></div>
+                </div>
+
+                <div class="col-3 d-flex justify-content-between prefooter-container prefooter-container-last">
+                    <span class="fw-bold image-title">SUBSCRIPTION</span>
+                    <div class="fake-img"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
 @endsection
