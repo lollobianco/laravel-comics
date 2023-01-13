@@ -46,11 +46,11 @@
 
                 <div class="col-4 right-info">
 
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-column ps-5">
 
                         <div class="fw-semibold text-end">ADVERTISEMENT</div>
 
-                        <img src="{{ asset('images/adv.jpg') }}" alt="adv">
+                        <img src="{{ asset('images/SCR-20230113-o1p.png') }}" alt="adv">
 
                     </div>
 
