@@ -22,10 +22,16 @@ Route::get('/', function () {
 
 
 
-Route::get('/comic', function () {
+Route::get('/comic/{id}', function ($id) {
 
     $comics = config('comics');
 
-    return view('comic', compact('comics'));
+    if( is_numeric($id) && $id >= 0 && $id < count($comics) ){
+        $single_comic = $comics[$id];
+    } else {
+        abort(404);
+    }
+
+    return view('comic', compact('single_comic'));
 })->name('comic');
 

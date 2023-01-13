@@ -101,7 +101,49 @@ a:hover{
  
  span{
    font-size: 0.9rem;
- }#bg-container{
+ }.blue-bar{
+   height: 70px;
+   background-color: #0082F9;
+   position: relative;
+}
+
+.info-section{
+   padding: 70px 0;
+}
+
+.comic-title{
+   color: #003F5D;
+}
+
+.green-bar{
+   background-color: #55BA59;
+   border-bottom: 2px solid #357639;
+}
+
+.separator{
+   border-right: 2px solid #357639;
+}
+
+.check-availability{
+   color: white;
+}
+
+.separator div{
+   color: #BCFC97;
+}
+
+.cover{
+   position: absolute;
+   top: 288px;
+   border: 2px solid white;
+}
+
+.gallery{
+   background-color: #01A9D9;
+   font-size: 0.8rem;
+   color: white;
+   text-align: center;
+}#bg-container{
    background-image: url('../images/footer-bg.jpg');
    background-repeat: no-repeat;
    background-size: cover;

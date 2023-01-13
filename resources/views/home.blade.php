@@ -8,13 +8,15 @@
 
             <div class="d-flex flex-wrap">
 
-            @foreach ($comics as $element)
+            @foreach ($comics as $id => $element)
 
-            <div class="card-container d-flex flex-column">
-                <div class="card-image"> <img class="image-comic" src="{{$element['thumb']}}" alt=""></div>
-                <div class="card-text text-white mb-4">{{$element['title']}}</div>
-            </div>
-
+              <div class="card-container d-flex flex-column">
+                <a href="{{ route('comic', compact('id')) }}">
+                  <div class="card-image mb-3"> <img class="image-comic" src="{{$element['thumb']}}" alt=""></div>
+                  <div class="card-text text-white mb-4">{{$element['title']}}</div>
+                </a>
+              </div>
+            
             @endforeach
 
             </div>
